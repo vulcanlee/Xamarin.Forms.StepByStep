@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HelloBlankXamlApp"
+             x:Class="HelloBlankXamlApp.MainPage">
+
+  <StackLayout
+    Orientation="Vertical"
+     Margin="20"
+    >
+
+    <Label Text="Welcome to Xamarin Forms!"
+           VerticalOptions="Center"
+           HorizontalOptions="Center" />
+    <Label Text="Your Name" />
+    <Entry x:Name="entYourName"
+           Placeholder="Please input your name"
+         />
+    <Button x:Name="btnOK"
+            Text="OK"
+            Clicked="OnbtnOK_Clicked"
+          />
+    <Label x:Name="lblSayHello"
+           Text=""  
+          />
+  </StackLayout>
+
+</ContentPage>
