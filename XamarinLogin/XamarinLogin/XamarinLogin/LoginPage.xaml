@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLogin.LoginPage"
+             Title="使用者登入"
+             >
+
+  <Grid
+    HorizontalOptions="FillAndExpand" VerticalOptions="Center"
+    Padding="30,0"
+      >
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="30" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Label Text="歡迎來到 Xamarin.Forms"
+           FontSize="40"
+           Grid.Row="0" Grid.ColumnSpan="2"
+           HorizontalTextAlignment="Center"
+           />
+    <Label Text="&#xf007;"
+           FontSize="25"
+           FontFamily="FontAwesome"
+           Grid.Row="1" Grid.Column="0"
+           />
+    <Entry Placeholder="請輸入帳號"
+           x:Name="entryAccount"
+           Grid.Row="1" Grid.Column="1"
+           HorizontalOptions="FillAndExpand"
+             />
+    <Label Text="&#xf084;"
+           FontSize="25"
+           FontFamily="FontAwesome"
+           Grid.Row="2" Grid.Column="0"/>
+    <Entry Placeholder="請輸入密碼"
+           x:Name="entryPassword"
+           Grid.Row="2" Grid.Column="1"
+           IsPassword="True"  />
+    <Button Text="登入"
+            x:Name="buttonLogin"
+            Grid.Row="3" Grid.ColumnSpan="2"
+            HorizontalOptions="FillAndExpand"
+              />
+  </Grid>
+</ContentPage>
