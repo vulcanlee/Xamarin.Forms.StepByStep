@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HomeMenu.DetailView2"
+             Title="Xamarin.Forms 控制項2展示">
+  <ScrollView
+    Orientation="Vertical"
+    Padding="20,0,20,0">
+    <StackLayout
+      Orientation="Vertical">
+
+      <StackLayout
+          Orientation="Vertical">
+        <Label Text="Image" />
+        <Image Source="icon.png"/>
+      </StackLayout>
+
+      <StackLayout
+          Orientation="Vertical">
+        <Label Text="Label" />
+        <Label Text="Label可用於顯示文字訊息於螢幕上，可以顯示單行或者多行"
+               TextColor="Red"
+               FontSize="18"
+               LineBreakMode="CharacterWrap"
+               />
+        <Label Text="TailTruncation 模式 Label可用於顯示文字訊息於螢幕上，可以顯示單行或者多行"
+               TextColor="Purple"
+               FontSize="18"
+               LineBreakMode="TailTruncation"
+               />
+        <Label Text="HeadTruncation 模式 Label可用於顯示文字訊息於螢幕上，可以顯示單行或者多行"
+               TextColor="Blue"
+               FontSize="18"
+               LineBreakMode="HeadTruncation"
+               />
+        <Label Text="MiddleTruncation 模式 Label可用於顯示文字訊息於螢幕上，可以顯示單行或者多行"
+               TextColor="Green"
+               FontSize="18"
+               LineBreakMode="MiddleTruncation"
+               />
+      </StackLayout>
+
+      <StackLayout
+          Orientation="Vertical">
+        <Label Text="Picker " />
+        <Picker x:Name="picker我的選單"/>
+      </StackLayout>
+
+      <StackLayout
+        Orientation="Vertical">
+        <Label Text="ProgressBar" />
+        <ProgressBar Progress="0.2"/>
+      </StackLayout>
+
+      <StackLayout
+          Orientation="Vertical">
+        <Label Text="SearchBar " />
+        <SearchBar Placeholder="請輸入要搜尋的關鍵字"/>
+      </StackLayout>
+
+      <StackLayout
+          Orientation="Vertical">
+        <Label Text="Slider " />
+        <Slider Minimum="0" Maximum="100"/>
+      </StackLayout>
+
+      <StackLayout
+          Orientation="Vertical">
+        <Label Text="Stepper" />
+        <Stepper />
+      </StackLayout>
+
+      <StackLayout
+          Orientation="Vertical">
+        <Label Text="Switch" />
+        <Switch  />
+      </StackLayout>
+
+      <StackLayout
+          Orientation="Vertical">
+        <Label Text="TimePicker " />
+        <TimePicker />
+      </StackLayout>
+
+      <StackLayout
+          Padding="0,0,40,0"
+          Orientation="Vertical">
+        <Label Text="WebView" />
+        <WebView Source="http://www.microsoft.com"
+                 HorizontalOptions="FillAndExpand"
+                 HeightRequest="800"/>
+      </StackLayout>
+
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

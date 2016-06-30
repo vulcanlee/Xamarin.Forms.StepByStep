@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HomeMenu.DetailView4"
+             Title="堆疊與捲動版面配置">
+  <StackLayout
+    Orientation="Vertical" >
+    <StackLayout
+      Orientation="Vertical">
+
+      <Label Text="StackLayout Vertical" />
+      <StackLayout
+        Orientation="Vertical">
+        <BoxView Color="Red" HeightRequest="50" WidthRequest="50" />
+        <BoxView Color="Blue" HeightRequest="50" WidthRequest="50" />
+        <BoxView Color="Green" HeightRequest="50" WidthRequest="50" />
+      </StackLayout>
+
+      <Label Text="StackLayout Horizontal" />
+      <StackLayout
+        Orientation="Horizontal">
+        <BoxView Color="Red" HeightRequest="50" WidthRequest="50" />
+        <BoxView Color="Blue" HeightRequest="50" WidthRequest="50" />
+        <BoxView Color="Green" HeightRequest="50" WidthRequest="50" />
+      </StackLayout>
+
+      <Label Text="ScrollView Horizontal" />
+      <ScrollView
+        Orientation="Horizontal">
+        <StackLayout
+          Orientation="Horizontal">
+          <BoxView Color="Red" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Blue" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Green" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Red" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Blue" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Green" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Red" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Blue" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Green" HeightRequest="50" WidthRequest="50" />
+        </StackLayout>
+      </ScrollView>
+
+      <Label Text="ScrollView Vertical" />
+      <ScrollView
+        Orientation="Vertical">
+        <StackLayout
+          Orientation="Vertical">
+          <BoxView Color="Red" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Blue" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Green" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Red" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Blue" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Green" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Red" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Blue" HeightRequest="50" WidthRequest="50" />
+          <BoxView Color="Green" HeightRequest="50" WidthRequest="50" />
+        </StackLayout>
+      </ScrollView>
+
+    </StackLayout>
+
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:LayoutOp"
+             x:Class="LayoutOp.MainPage">
+
+  <StackLayout
+    Padding="0,20,0,0"
+    >
+    <Label
+      Text="VerticalOptions Start"
+      BackgroundColor="Blue"
+      VerticalOptions="Start"/>
+    <Label
+      Text="VerticalOptions StartAndExpand"
+      BackgroundColor="Yellow"
+      VerticalOptions="StartAndExpand"/>
+    <Label
+      Text="VerticalOptions Center"
+      BackgroundColor="Blue"
+      VerticalOptions="Center"/>
+    <Label
+      Text="VerticalOptions CenterAndExpand"
+      BackgroundColor="Yellow"
+      VerticalOptions="CenterAndExpand"/>
+    <Label
+      Text="VerticalOptions End"
+      BackgroundColor="Blue"
+      VerticalOptions="End"/>
+    <Label
+      Text="VerticalOptions EndAndExpand"
+      BackgroundColor="Yellow"
+      VerticalOptions="EndAndExpand"/>
+    <Label
+      Text="VerticalOptions Fill"
+      BackgroundColor="Blue"
+      VerticalOptions="Fill"/>
+    <Label
+      Text="VerticalOptions FillAndExpand"
+      BackgroundColor="Yellow"
+      VerticalOptions="FillAndExpand"/>
+  </StackLayout>
+
+</ContentPage>
