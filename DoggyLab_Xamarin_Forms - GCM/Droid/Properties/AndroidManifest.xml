@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.xamarin.sample.DoggyLab">
 	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="23" />
-	<application android:label="DoggyLab" android:icon="@drawable/icon">
-	</application>
+	<application android:label="DoggyLab" android:icon="@drawable/icon"></application>
 </manifest>
