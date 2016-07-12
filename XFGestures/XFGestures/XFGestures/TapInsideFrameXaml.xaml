@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFGestures.TapInsideFrameXaml">
+  <StackLayout>
+
+    <Image Source="tapped.jpg" HeightRequest="150" WidthRequest="150">
+      <Image.GestureRecognizers>
+        <!-- Using the Command property works fine -->
+        <TapGestureRecognizer
+            Command="{Binding TapCommand}"
+            CommandParameter="Image1" />
+      </Image.GestureRecognizers>
+
+    </Image>
+
+    <Label Text="點擊(Tap)猴子圖片或者底下社群字體" Font="Large"
+           HorizontalOptions="Center">
+    </Label>
+
+    <StackLayout
+      Orientation="Horizontal"
+      HorizontalOptions="Center">
+       <Label Text="&#xf230;"
+           FontSize="60"
+           FontFamily="FontAwesome"
+           Margin="0,0,40,0"
+           >
+        <Label.GestureRecognizers>
+          <TapGestureRecognizer
+              NumberOfTapsRequired="1"
+              Command="{Binding TapCommand}"
+              CommandParameter="Frame1" />
+        </Label.GestureRecognizers>
+      </Label>
+      <Label Text="&#xf17a;"
+           FontSize="60"
+           FontFamily="FontAwesome"
+           Margin="0,0,40,0"
+           >
+        <Label.GestureRecognizers>
+          <TapGestureRecognizer
+              NumberOfTapsRequired="2"
+              Command="{Binding TapCommand}"
+              CommandParameter="Frame1" />
+        </Label.GestureRecognizers>
+      </Label>
+      <Label Text="&#xf0d4;"
+           FontSize="60"
+           FontFamily="FontAwesome"
+           >
+        <Label.GestureRecognizers>
+          <TapGestureRecognizer
+              NumberOfTapsRequired="2"
+              Command="{Binding TapCommand}"
+              CommandParameter="Frame1" />
+        </Label.GestureRecognizers>
+      </Label>
+   </StackLayout>
+    <Label x:Name="label"
+           Text="{Binding NumberOfTapsTapped}"
+           Font="Large"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+            />
+
+  </StackLayout>
+</ContentPage>
