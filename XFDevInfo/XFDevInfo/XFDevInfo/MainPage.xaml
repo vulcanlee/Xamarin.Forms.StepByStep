@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XFDevInfo"
+             x:Class="XFDevInfo.MainPage">
+
+  <ContentPage.Padding>20</ContentPage.Padding>
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <x:Double x:Key="TopicLabelFontSize">30</x:Double>
+      <x:Double x:Key="DetailLabelFontSize">18</x:Double>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  
+  <ScrollView
+    Orientation="Vertical"
+    >
+    <StackLayout
+      Orientation="Vertical"
+      >
+      
+    <StackLayout
+      Orientation="Vertical"
+      HorizontalOptions="Start" VerticalOptions="Start"
+      >
+      <Label Text="電池狀態" FontSize="{StaticResource TopicLabelFontSize}" />
+
+      <Label x:Name="label電池狀態1" FontSize="{StaticResource DetailLabelFontSize}" />
+      <Label x:Name="label電池狀態2" FontSize="{StaticResource DetailLabelFontSize}" />
+      <Label x:Name="label電池狀態3" FontSize="{StaticResource DetailLabelFontSize}" />
+
+    </StackLayout>
+
+    <StackLayout
+      Orientation="Vertical"
+      HorizontalOptions="Start" VerticalOptions="Start"
+      >
+      <Label Text="網路狀態" FontSize="{StaticResource TopicLabelFontSize}" />
+
+      <Label x:Name="label網路狀態1" FontSize="{StaticResource DetailLabelFontSize}" />
+      <Label x:Name="label網路狀態2" FontSize="{StaticResource DetailLabelFontSize}" />
+      <Label x:Name="label網路狀態3" FontSize="{StaticResource DetailLabelFontSize}" />
+      <Label x:Name="label網路狀態4" FontSize="{StaticResource DetailLabelFontSize}" />
+    </StackLayout>
+
+    <StackLayout
+     Orientation="Vertical"
+     HorizontalOptions="Start" VerticalOptions="Start"
+      >
+      <Label Text="裝置資訊" FontSize="{StaticResource TopicLabelFontSize}" />
+
+      <Label x:Name="label裝置資訊1" FontSize="{StaticResource DetailLabelFontSize}" />
+      <Label x:Name="label裝置資訊2" FontSize="{StaticResource DetailLabelFontSize}" />
+      <Label x:Name="label裝置資訊3" FontSize="{StaticResource DetailLabelFontSize}" />
+      <Label x:Name="label裝置資訊4" FontSize="{StaticResource DetailLabelFontSize}" />
+      <Label x:Name="label裝置資訊5" FontSize="{StaticResource DetailLabelFontSize}" />
+      <Label x:Name="label裝置資訊6" FontSize="{StaticResource DetailLabelFontSize}" />
+    </StackLayout>
+
+    <StackLayout
+      Orientation="Vertical"
+      HorizontalOptions="Start" VerticalOptions="Start"
+      >
+      <Label Text="位置定位" FontSize="{StaticResource TopicLabelFontSize}" />
+
+      <Label x:Name="label位置定位1" FontSize="{StaticResource DetailLabelFontSize}" />
+
+      <Button x:Name="button位置定位" Text="位置定位" Clicked="Onbutton位置定位" />
+      <Button x:Name="button開啟地圖" Text="開啟地圖" Clicked="Onbutton開啟地圖" />
+    </StackLayout>
+
+    <StackLayout
+      Orientation="Vertical"
+      HorizontalOptions="Start" VerticalOptions="Start"
+      >
+      <Label Text="觸發震動" FontSize="{StaticResource TopicLabelFontSize}" />
+
+      <Button x:Name="button觸發震動" Text="觸發震動" Clicked="Onbutton觸發震動" />
+    </StackLayout>
+  
+    </StackLayout>
+
+  </ScrollView>
+
+</ContentPage>
