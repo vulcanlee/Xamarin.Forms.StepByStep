@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XFMessage"
+             x:Class="XFMessage.MainPage">
+
+  <StackLayout
+    Orientation="Vertical"
+    HorizontalOptions="Start" VerticalOptions="Center">
+    <Button x:Name="button說嗨" Text="說嗨" Clicked="Onbutton說嗨Click"/>
+    <Button x:Name="button對約翰說嗨" Text="對約翰說嗨" Clicked="Onbutton對約翰說嗨Click"/>
+    <Button x:Name="button停止訂閱顯示警告" Text="停止訂閱顯示警告" Clicked="Onbutton停止訂閱顯示警告Click"/>
+    <ListView x:Name="listView" />
+  </StackLayout>
+
+</ContentPage>
