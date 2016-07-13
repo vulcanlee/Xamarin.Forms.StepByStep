@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XFDevice"
+             x:Class="XFDevice.MainPage"
+             Title="知道我在哪個平台上嗎?"
+             >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness">
+      <OnPlatform.iOS>
+        0,20,0,0
+      </OnPlatform.iOS>
+      <OnPlatform.Android>
+        0, 0, 0, 0
+      </OnPlatform.Android>
+      <OnPlatform.WinPhone>
+        0, 0, 0, 0
+      </OnPlatform.WinPhone>
+    </OnPlatform>
+  </ContentPage.Padding>
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+
+    <Label
+      Grid.Row="0" Grid.Column="0">
+      <Label.Text>
+        <OnPlatform x:TypeArguments="x:String">
+          <OnPlatform.iOS>我正在使用 iOS</OnPlatform.iOS>
+          <OnPlatform.Android>我正在使用 Android</OnPlatform.Android>
+          <OnPlatform.WinPhone>我正在使用 WinPhone</OnPlatform.WinPhone>
+        </OnPlatform>
+
+      </Label.Text>
+    </Label>
+
+    <BoxView
+      Grid.Row="0" Grid.Column="1"
+      HorizontalOptions="Center" VerticalOptions="Center"
+      >
+      <BoxView.BackgroundColor>
+        <OnPlatform x:TypeArguments="Color"
+          iOS="Green"
+          Android="#738182"
+          WinPhone="Accent"
+        />
+      </BoxView.BackgroundColor>
+      <BoxView.WidthRequest>
+        <OnPlatform x:TypeArguments="x:Double"
+          iOS="130"
+          Android="80"
+          WinPhone="30" />
+      </BoxView.WidthRequest>
+      <BoxView.HeightRequest>
+        <OnPlatform x:TypeArguments="x:Double"
+          iOS="130"
+          Android="80"
+          WinPhone="30" />
+      </BoxView.HeightRequest>
+    </BoxView>
+
+    <Label
+      x:Name="label處理中"
+      Text="處理中"
+      HorizontalOptions="Center" VerticalOptions="Center"
+      Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+      />
+
+    <Button
+      x:Name="button猜猜我是誰"
+      Text="猜猜我是誰"
+      HorizontalOptions="Center" VerticalOptions="Center"
+      Grid.Row="2" Grid.Column="0"
+      Clicked="OnGuessClicked" />
+
+    <Button
+      x:Name="button定時更新"
+      Text="定時更新"
+      Grid.Row="2" Grid.Column="1"
+      Clicked="OnTimerClicked" />
+
+     <Button
+      x:Name="button背景處理中"
+      Text="背景處理中"
+      Grid.Row="3" Grid.Column="0"
+      Clicked="OnBackgroundClicked" />
+
+   <Button
+      x:Name="button開啟網頁"
+      Text="開啟網頁"
+      Grid.Row="3" Grid.Column="1"
+      Clicked="OnOpenUriClicked" />
+
+  </Grid>
+
+</ContentPage>
