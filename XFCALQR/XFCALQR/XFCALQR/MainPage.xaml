@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XFCALQR"
+             x:Class="XFCALQR.MainPage">
+
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0, 40, 0, 0"  />
+  </ContentPage.Padding>
+
+  <StackLayout
+    Orientation="Vertical">
+    <Label x:Name="labelQRCode" LineBreakMode="WordWrap" />
+    <Button x:Name="buttonScan" Text="掃描QRCode" Clicked="OnbuttonScanClicked" />
+
+    <Label x:Name="labelDate" LineBreakMode="WordWrap" />
+    <Button x:Name="buttonCalendar" Text="選擇日期" Clicked="OnbuttonCalendarClicked" />
+
+  </StackLayout>
+</ContentPage>
