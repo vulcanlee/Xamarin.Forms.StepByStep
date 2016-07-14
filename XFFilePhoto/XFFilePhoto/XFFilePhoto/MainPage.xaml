@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XFFilePhoto"
+             x:Class="XFFilePhoto.MainPage">
+
+  <ContentPage.Padding>20</ContentPage.Padding>
+  
+  <Grid
+    
+    >
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    
+    <Image x:Name="image1" Grid.Row="0" Grid.Column="0"/>
+    <Image x:Name="image2" Grid.Row="0" Grid.Column="1"/>
+    <Image x:Name="image3" Grid.Row="2" Grid.Column="0"/>
+    <Image x:Name="image4" Grid.Row="2" Grid.Column="1"/>
+    
+    <Button x:Name="buttonImage1" Text="拍照" Clicked="OnbuttonImage1" Grid.Row="1" Grid.Column="0" />
+    <Button x:Name="buttonImage2" Text="拍照" Clicked="OnbuttonImage2" Grid.Row="1" Grid.Column="1" />
+    <Button x:Name="buttonImage3" Text="拍照" Clicked="OnbuttonImage3" Grid.Row="3" Grid.Column="0" />
+    <Button x:Name="buttonImage4" Text="拍照" Clicked="OnbuttonImage4" Grid.Row="3" Grid.Column="1" />
+    <Button x:Name="buttonFile" Text="檔案存取" Clicked="OnbuttonFile" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" />
+      
+  </Grid>
+
+</ContentPage>
