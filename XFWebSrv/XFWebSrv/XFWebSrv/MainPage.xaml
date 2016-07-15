@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XFWebSrv"
+             x:Class="XFWebSrv.MainPage">
+
+  <ContentPage.Padding>30</ContentPage.Padding>
+
+  <StackLayout
+    Orientation="Vertical"
+    >
+
+    <Entry x:Name="entryValue1" Keyboard="Numeric" Text="168" />
+    <Entry x:Name="entryValue2" Keyboard="Numeric" Text="99" />
+    
+    <Label x:Name="labelRESTful" />
+    <Button x:Name="buttonRESTful" Text="呼叫 RESTful" Clicked="OnRESTfulClicked" />
+
+    <Label x:Name="labelWCF" />
+    <Button x:Name="buttonWCF" Text="呼叫 WCF" Clicked="OnWCFClicked" />
+
+  </StackLayout>
+
+</ContentPage>
