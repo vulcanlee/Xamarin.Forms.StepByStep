@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XFAuth"
+             x:Class="XFAuth.MainPage">
+
+  <ContentPage.Padding>30</ContentPage.Padding>
+
+  <StackLayout
+    Orientation="Vertical"
+    VerticalOptions="Center" HorizontalOptions="Center"
+  >
+    <Button
+      x:Name="button登入Facebook"
+      Text="登入Facebook"
+      />
+    <Label
+      x:Name="labelToken"
+      Text="Token"
+      IsVisible="False"
+      />
+    <Label
+      x:Name="labelTokenValue"
+      Text=""
+      LineBreakMode="WordWrap"
+      IsVisible="False"
+      />
+    <Label
+      x:Name="labelTokenError"
+      Text=""
+      TextColor="Red"
+      LineBreakMode="WordWrap"
+      IsVisible="False"
+      />
+
+  </StackLayout>
+</ContentPage>
