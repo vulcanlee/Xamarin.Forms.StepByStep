@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XFSQLite"
+             x:Class="XFSQLite.MainPage">
+
+  <StackLayout
+    Orientation="Vertical"
+    VerticalOptions="Center" HorizontalOptions="Center"
+    >
+    <Label
+      x:Name="labelMessage"
+      Text="歡迎來到 SQLite 的世界"
+      VerticalOptions="Center"
+      HorizontalOptions="Center" />
+    
+    <Label
+      x:Name="labelMessagePath"
+      Text=""
+      VerticalOptions="Center"
+      HorizontalOptions="Center"
+      LineBreakMode="WordWrap"/>
+
+    <Label
+     x:Name="labelMessageWrite"
+     Text=""
+     VerticalOptions="Center"
+     HorizontalOptions="Center" />
+
+    <Button
+      x:Name="button寫入資料庫"
+      Text="寫入資料庫" />
+
+    <Label
+     x:Name="labelMessageRead"
+     Text=""
+     VerticalOptions="Center"
+     HorizontalOptions="Center" />
+
+    <Button
+      x:Name="button從資料庫讀出"
+      Text="從資料庫讀出" />
+  </StackLayout>
+
+</ContentPage>
