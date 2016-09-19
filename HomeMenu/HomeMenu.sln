@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeMenu.Droid", "HomeMenu\HomeMenu.Droid\HomeMenu.Droid.csproj", "{4950C961-8202-48E7-8BFD-1305A520D090}"
 EndProject
@@ -256,6 +256,8 @@ Global
 		{1FBD3B9B-13E2-40FC-82CD-C1F30B4B1BF3}.AppStore|x86.Build.0 = Release|x86
 		{1FBD3B9B-13E2-40FC-82CD-C1F30B4B1BF3}.AppStore|x86.Deploy.0 = Release|x86
 		{1FBD3B9B-13E2-40FC-82CD-C1F30B4B1BF3}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1FBD3B9B-13E2-40FC-82CD-C1F30B4B1BF3}.Debug|Any CPU.Build.0 = Debug|x86
+		{1FBD3B9B-13E2-40FC-82CD-C1F30B4B1BF3}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{1FBD3B9B-13E2-40FC-82CD-C1F30B4B1BF3}.Debug|ARM.ActiveCfg = Debug|ARM
 		{1FBD3B9B-13E2-40FC-82CD-C1F30B4B1BF3}.Debug|ARM.Build.0 = Debug|ARM
 		{1FBD3B9B-13E2-40FC-82CD-C1F30B4B1BF3}.Debug|ARM.Deploy.0 = Debug|ARM

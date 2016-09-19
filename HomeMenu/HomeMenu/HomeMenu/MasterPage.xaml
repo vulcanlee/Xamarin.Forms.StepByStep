@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HomeMenu.MasterPage"
+             Icon="hamburger.png"
              Title="功能清單"
              >
   <ContentPage.Content>

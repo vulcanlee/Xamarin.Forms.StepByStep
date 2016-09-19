@@ -14,6 +14,7 @@ namespace HomeMenu
             InitializeComponent();
 
             MainPage = new HomeMenu.MainPage();
+            NavigationService.NavigateAsync("MyMasterDetail/MyNavigationPage/MainPage", animated: false);
         }
 
         protected override void OnStart()
