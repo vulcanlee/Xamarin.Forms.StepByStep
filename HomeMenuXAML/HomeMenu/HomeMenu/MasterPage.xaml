@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HomeMenu.MasterPage"
+             Icon="hamburger.png"
+             Title="功能清單"
+             >
+  <ContentPage.Content>
+    <StackLayout
+      Orientation="Vertical"
+      VerticalOptions="FillAndExpand">
+      <StackLayout
+        Orientation="Horizontal"
+        Padding="10,20,10,20"
+        BackgroundColor="Blue"
+        >
+        <Label
+          Text ="&#xf0c9;"
+          FontSize="25"
+          FontFamily="FontAwesome"
+          TextColor="White"
+          VerticalTextAlignment="Center"
+          HorizontalOptions="Start" VerticalOptions="CenterAndExpand"
+                    />
+        <Label
+          Text ="主功能表選單"
+          FontSize="20"
+          TextColor="White"
+          VerticalTextAlignment="Center"
+          HorizontalOptions="Start" VerticalOptions="CenterAndExpand"
+                    />
+      </StackLayout>
+      <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ViewCell>
+              <ViewCell.View>
+                <Grid
+                  VerticalOptions="Center"
+                  Padding="10,5,10,5"
+                  >
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="260" />
+                  </Grid.ColumnDefinitions>
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                  </Grid.RowDefinitions>
+                  <Label
+                    Grid.Row="0" Grid.Column="0"
+                    Text ="{Binding Icon, Mode=TwoWay}"
+                    FontSize="25"
+                    FontFamily="FontAwesome"
+                    VerticalTextAlignment="Center"
+                    HorizontalOptions="Start" VerticalOptions="CenterAndExpand"
+                    />
+                  <Label
+                    Grid.Row="0" Grid.Column="1"
+                    Text ="{Binding Title, Mode=TwoWay}"
+                    FontSize="25"
+                    VerticalTextAlignment="Center"
+                    HorizontalOptions="Start" VerticalOptions="CenterAndExpand"
+                    />
+                </Grid>
+              </ViewCell.View>
+            </ViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

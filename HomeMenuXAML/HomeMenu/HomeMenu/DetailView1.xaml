@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HomeMenu.DetailView1"
+             Title="Xamarin.Forms 控制項1展示"
+             >
+  <ScrollView
+    Orientation="Vertical"
+    Padding="20,0,20,0">
+    <StackLayout
+      Orientation="Vertical">
+
+      <StackLayout
+        Orientation="Vertical">
+        <Label Text="ActivityIndicator" />
+        <ActivityIndicator Color="Red" IsRunning="true" />
+      </StackLayout>
+
+      <StackLayout
+        Orientation="Vertical">
+        <Label Text="BoxView" />
+        <BoxView Color="Red" />
+      </StackLayout>
+
+      <StackLayout
+        Orientation="Vertical">
+        <Label Text="Button" />
+        <Button x:Name="button我的按鈕" Text="請按按鈕" />
+      </StackLayout>
+
+      <StackLayout
+        Orientation="Vertical">
+        <Label Text="DatePicker" />
+        <DatePicker VerticalOptions="CenterAndExpand" >
+          <DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
+        </DatePicker>
+      </StackLayout>
+
+      <StackLayout
+          Orientation="Vertical">
+        <Label Text="Editor" />
+        <Editor x:Name="editor多行文字輸入盒"
+                HeightRequest="240"/>
+      </StackLayout>
+
+      <StackLayout
+          Orientation="Vertical">
+        <Label Text="Entry" />
+        <Entry Placeholder="Placeholder 屬性可用於浮水印提示"/>
+      </StackLayout>
+
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
