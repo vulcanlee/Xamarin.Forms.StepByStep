@@ -5,19 +5,19 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BDB030DC-21BD-473B-9ECD-196792B15482}</ProjectGuid>
+    <ProjectGuid>{8D4C727B-335F-4CAE-A936-CBF3D4DC0F95}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>XFWebSrv.Droid</RootNamespace>
-    <AssemblyName>XFWebSrv.Droid</AssemblyName>
+    <RootNamespace>XFDevice.Droid</RootNamespace>
+    <AssemblyName>XFDevice.Droid</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
@@ -100,7 +100,6 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WCFService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -122,13 +121,9 @@
     <AndroidResource Include="Resources\values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\XFWCFPCL\XFWCFPCL.csproj">
-      <Project>{356db51d-8046-4d81-aa4a-a32684759aa6}</Project>
-      <Name>XFWCFPCL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\XFWebSrv\XFWebSrv.csproj">
-      <Project>{A451E918-5A6B-4A83-B212-D842789D0F8A}</Project>
-      <Name>XFWebSrv</Name>
+    <ProjectReference Include="..\XFDevice\XFDevice.csproj">
+      <Project>{F1A32479-561A-431E-B5C9-FCD8E053868E}</Project>
+      <Name>XFDevice</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

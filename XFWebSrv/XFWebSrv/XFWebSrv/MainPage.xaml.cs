@@ -17,7 +17,8 @@ namespace XFWebSrv
 
         async void OnRESTfulClicked(object sender, EventArgs e)
         {
-            var fooURL = $"http://doggyrestfulapi.azurewebsites.net/api/SumData?value1={entryValue1.Text}&value2={entryValue2.Text}";
+            //var fooURL = $"http://doggyrestfulapi.azurewebsites.net/api/SumData?value1={entryValue1.Text}&value2={entryValue2.Text}";
+            var fooURL = $"http://xamarindoggy.azurewebsites.net/api/SumData?value1={entryValue1.Text}&value2={entryValue2.Text}";
             var fooClient = new HttpClient();
             var fooResult = await fooClient.GetStringAsync(fooURL);
             labelRESTful.Text = $"透過 RESTful API 計算出的結果 : {fooResult}";
