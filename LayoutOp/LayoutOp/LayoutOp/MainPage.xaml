@@ -4,41 +4,41 @@
              xmlns:local="clr-namespace:LayoutOp"
              x:Class="LayoutOp.MainPage">
 
-  <StackLayout
+    <StackLayout
     Padding="0,20,0,0"
     >
-    <Label
+        <Label
       Text="VerticalOptions Start"
-      BackgroundColor="Blue"
+      BackgroundColor="Pink"
       VerticalOptions="Start"/>
-    <Label
+        <Label
       Text="VerticalOptions StartAndExpand"
       BackgroundColor="Yellow"
       VerticalOptions="StartAndExpand"/>
-    <Label
+        <Label
       Text="VerticalOptions Center"
-      BackgroundColor="Blue"
+      BackgroundColor="Pink"
       VerticalOptions="Center"/>
-    <Label
+        <Label
       Text="VerticalOptions CenterAndExpand"
       BackgroundColor="Yellow"
       VerticalOptions="CenterAndExpand"/>
-    <Label
+        <Label
       Text="VerticalOptions End"
-      BackgroundColor="Blue"
+      BackgroundColor="Pink"
       VerticalOptions="End"/>
-    <Label
+        <Label
       Text="VerticalOptions EndAndExpand"
       BackgroundColor="Yellow"
       VerticalOptions="EndAndExpand"/>
-    <Label
+        <Label
       Text="VerticalOptions Fill"
-      BackgroundColor="Blue"
+      BackgroundColor="Pink"
       VerticalOptions="Fill"/>
-    <Label
+        <Label
       Text="VerticalOptions FillAndExpand"
       BackgroundColor="Yellow"
       VerticalOptions="FillAndExpand"/>
-  </StackLayout>
+    </StackLayout>
 
 </ContentPage>
